@@ -1,0 +1,222 @@
+@font-face {
+  font-family: custom;
+  src: url(./Font/LoveLadyPersonalUse.ttf);
+}
+
+@font-face {
+  font-family: customized;
+  src: url(./Font/Evil\ Empire.otf);
+}
+.App {
+  text-align: center;
+}
+
+
+*{
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+}
+
+body {
+  color: #fff;
+  background-color: #000000;
+}
+
+.container{
+  margin: 0 50px;
+  height: 100vh;
+}
+
+.curve {
+  position: fixed;
+  width: 50vw;
+  background-color: #07e907;
+  top: 0%; bottom: 0%; left: 25; right: 0%;
+  border-radius: 40% 60% 0% 65% / 40% 0% 0% 60% ;
+}
+
+.imger img {
+  position: absolute;
+  width: 700px;
+  border-radius: 0;
+  bottom: -0.5%;
+  left: 45%;
+}
+
+.navbar-container{
+  position: fixed;
+  right: 0;
+  left: 0;
+  padding: 13px 0;
+  background: none;
+}
+
+.nav-bar {
+  margin: 0 50px;
+  padding: 5px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-bar img {
+  margin: 0; padding: 0;
+  border-radius: 0;
+}
+
+.pg-1, .nav-bar {
+  display: flex;
+}
+
+.menu p {
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.menu p::after {
+  position: absolute;
+  content: '';
+  right: 0;
+  width: 2%;
+  bottom: 15px;
+  margin-right: 50px;
+  transform-origin: right;
+  border: 2px solid #fff;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  transition: transform ease-in-out .5s;
+}
+
+.pg-1{
+  position: absolute;
+  top: 18vh;
+  left: 6%;
+  overflow-x: hidden;
+  transition: ease-in-out .5s;
+  flex-direction: column;
+}
+
+.pg-1::before, .pg-1::after{
+  content: '<div>';
+  margin: 0 -10px;
+  color: #5b5b5c;
+  font-family: custom;
+}
+.info::before,.info::after {
+  content: '<p>';
+  color: #5b5b5c;
+  font-family: custom;
+}
+
+.pg-1::after{
+  font-family: custom;
+  content: '</div>';
+}
+
+.info::after {
+  font-family: custom;
+  content: '</p>';
+}
+
+.info {
+  position: relative;  
+  padding: 0 5px;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: customized;
+}
+.bio p {
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: #bbbbbd;
+}
+
+.intro, .bio {
+  margin-bottom: 20px;
+}
+
+.text {
+  margin-top: 20px;
+  margin-left: 25px;
+  pointer-events: none;
+}
+.text p {
+  width: 80%;
+  font-weight: lighter;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: justify;
+  margin: 15px 0 35px;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #282c34;
+  padding: 15px 45px;
+  border-radius: 5px;
+  margin-bottom: 2vh;
+  font-weight: bolder;
+  background-color: #07e907;
+  transition: ease-in-out .5s;
+}
+button:hover {
+  background-color: #07e907b7;
+  color: #fff;
+}
+.btn-container {
+  margin: 0 30px 20px;
+}
+
+img {
+  width: 40px;
+  padding-top: 5px;
+  margin: 0 5px 5px;
+  border-radius: 50%;
+}
+
+.icon-container {
+  position: fixed;
+  top: 40%; bottom: 5%; right: 2%;
+}
+
+.icon-container img:nth-child(2), .icon-container img:nth-child(3) {
+  width: 65px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icon-container img {
+  cursor: pointer;
+}
+
+.me img {
+  position: absolute;
+  width: 50vh;
+  border-radius: 0;
+}
+
+.theme-color {
+  display: none;
+  position: fixed;
+  top: -5%;
+  left: 45%;
+  border-radius: 50%;
+  background-color: white;
+  width: 11vh;
+  height: 11vh;
+}
+
+.theme-color img {
+  position: absolute;
+  width: 13vh;
+  right: -15%;
+  bottom: -10%;
+}
